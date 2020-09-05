@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Stream;
 
-public class Main {
+public class HashMapIterator {
 
 	public static void main(String[] args) {
 		HashMap<String, Integer> hm =  new HashMap<>();
@@ -15,10 +15,10 @@ public class Main {
 		hm.put("Albert", 38);
 		hm.put("Sarah", 28);
 		
-//		for (String name : hm.keySet()) {
-//			System.out.println(name+" is "+ hm.get(name)+" years old.");
-//		}
-//		System.out.println();
+		for (String name : hm.keySet()) {
+			System.out.println(name+" is "+ hm.get(name)+" years old.");
+		}
+		System.out.println();
 		
 //		Set<Map.Entry<String, Integer>> entrySet = hm.entrySet();
 //		for(Map.Entry<String, Integer> entry : entrySet) {
